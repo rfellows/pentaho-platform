@@ -29,11 +29,9 @@ public interface IMetaverseNode extends IIdentifiable, IMetaverseElement {
   String getLogicalId();
 
   /**
-   * Sets the property names that should be used in generating a logical id. Setting this should result in a logicalId
-   * being generated based on the keys passed in and the properties on the node. That id should be returned when
-   * getLogicalId is called.
-   * @param keys property keys that indicate what makes this node logically unique
+   * Sets the {@link org.pentaho.platform.api.metaverse.LogicalIdGenerator} to use for this node
+   * @param idGenerator
    */
-  void setLogicalIdPropertyKeys( String... keys );
+  void setLogicalIdGenerator( LogicalIdGenerator idGenerator );
 
 }

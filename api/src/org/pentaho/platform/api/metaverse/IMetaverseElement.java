@@ -17,8 +17,6 @@
 
 package org.pentaho.platform.api.metaverse;
 
-import java.util.Set;
-
 /**
  * The IMetaverseElement interface provides a contract for methods common to metaverse elements (node, links, e.g.)
  * 
