@@ -22,16 +22,5 @@ package org.pentaho.platform.api.metaverse;
  */
 public interface IMetaverseNode extends IIdentifiable, IMetaverseElement {
 
-  /**
-   * Gets a string representation of what makes this node logically unique
-   * @return
-   */
-  String getLogicalId();
-
-  /**
-   * Sets the {@link org.pentaho.platform.api.metaverse.LogicalIdGenerator} to use for this node
-   * @param idGenerator
-   */
-  void setLogicalIdGenerator( LogicalIdGenerator idGenerator );
 
 }

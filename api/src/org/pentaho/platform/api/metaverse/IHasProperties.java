@@ -100,4 +100,5 @@ public interface IHasProperties {
    * @param dirty true if it is dirty, false if it is not
    */
   void setDirty( boolean dirty );
+
 }

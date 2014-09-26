@@ -17,6 +17,9 @@
 
 package org.pentaho.platform.api.metaverse;
 
+import java.util.Map;
+import java.util.Properties;
+
 /**
  * A factory interface for creating metaverse objects.
  */
@@ -44,6 +47,10 @@ public interface IMetaverseObjectFactory {
    * @return
    */
   IMetaverseNode createNodeObject( String id, String name, String type );
+
+  IMetaverseNode createNodeObject( INamespace namespace,
+                                   LogicalIdGenerator idGenerator,
+                                   Map<String, Object> properties );
 
   /**
    * Creates a new metaverse link object and adds it to the current metaverse
